@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/black"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayoutCurrency">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCurrencySymbol"
+            android:layout_toLeftOf="@id/textViewCurrencyRate"
+            android:layout_margin="2dp"
+            android:padding="3dp"
+            android:text="Symbol"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCurrencySymbol"
+            android:text="Name"
+            android:id="@+id/textViewCurrencyName"
+            android:textColor="@color/white"
+            android:padding="3dp"
+            android:layout_margin="2dp"/>
+        <TextView
+            android:id="@+id/textViewCurrencyRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Rate"
+            android:textColor="@color/white"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="2dp"
+            android:padding="3dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
